@@ -39,7 +39,7 @@ post_data = {
     "is_active": True,
     "comments": "No comment"
 }
-
+print(post_data)
 response = requests.post(' http://127.0.0.1:8000/universities/', json=post_data, headers={'Authorization': 'Bearer ' + refresh})
 print(response.status_code)
 print(response.json())
